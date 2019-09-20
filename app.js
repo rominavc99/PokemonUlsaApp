@@ -5,6 +5,7 @@ const pokemonNumber = document.getElementById('pokemon-number');
 const pokemonWeight = document.getElementById('pokemon-weight');
 const pokemonAbilities = document.getElementById('pokemon-abilites');
 
+
 const pokemonApiUrl = 'https://pokeapi.co/api/v2/';
 
 let getPokemonData = async ()=> {
@@ -20,9 +21,9 @@ let getPokemonData = async ()=> {
 
     pokemonName.innerText = name;
     pokemonFrontImg.src = frontImg;
-    pokemonNumber.innerText = `Numero en la pokedex: ${pokemon.id}`;
+    pokemonNumber.innerText = `Numero en pokedex: ${pokemon.id}`;
     pokemonHeight.innerText = `La altura es: ${height}`;
-    pokemonWeight.innerText = `El peso es de: ${pokemon.weight}`;
+    pokemonWeight.innerText = `El peso es: ${pokemon.weight}`;
     
 };
 
